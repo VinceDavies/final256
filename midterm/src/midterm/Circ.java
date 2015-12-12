@@ -90,13 +90,13 @@ public class Circ extends JPanel {
 		this.repaint();
 	}
 
-	public String getMyBackClolor() {
+	public String getMyBackColor() {
 		return myBackColor;
 	}
 
-	public void setMyBackClolor(String myBackClolor) {
-		this.myBackColor = myBackClolor;
-		System.out.println(myBackClolor);
+	public void setMyBackColor(String myBackColor) {
+		this.myBackColor = myBackColor;
+		System.out.println(myBackColor);
 		this.repaint();
 	}
 

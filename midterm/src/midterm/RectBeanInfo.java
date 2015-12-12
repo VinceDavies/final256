@@ -29,9 +29,9 @@ public class RectBeanInfo extends SimpleBeanInfo{
             PropertyDescriptor _myBackColor = new PropertyDescriptor(
                     "myBackColor", beanClass, "getMyBackColor", "setMyBackColor");
             _myBackColor.setPropertyEditorClass(ColorEditor.class);
-            PropertyDescriptor _myFill = new PropertyDescriptor(
-                    "myFill", beanClass, "getMyFillColor", "setMyFillColor"); //added color 
-            _myFill.setPropertyEditorClass(TrueFalseEditor.class);
+            PropertyDescriptor _myFillColor = new PropertyDescriptor(
+                    "myFillColor", beanClass, "getMyFillColor", "setMyFillColor"); //added color 
+            _myFillColor.setPropertyEditorClass(TrueFalseEditor.class);
             PropertyDescriptor[] pds = new PropertyDescriptor[]
                                        {
                                        _myXStart,
@@ -40,7 +40,7 @@ public class RectBeanInfo extends SimpleBeanInfo{
                                        _myHeight,
                                        _myForeColor,
                                        _myBackColor,
-                                       _myFill
+                                       _myFillColor
             };
             return pds;
         } catch (Exception exception) {
